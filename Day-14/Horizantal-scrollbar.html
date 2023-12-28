@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            /* width: 100%; */
+            max-height: 250px;
+            /* background-color: aqua;  */
+            display: flex;
+            overflow-x: auto;
+        }
+        .container::-webkit-scrollbar{
+            width: 0%;
+        }
+        .container .child-con{
+            min-width: 220px;
+            height: 140px;
+            background-color: aqua;
+            line-height: 120px;
+            margin-right: 5px;
+            border: 2px solid red; 
+            text-align : center;  
+        }
+
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="child-con">container1</div>
+            <div class="child-con">container2</div>
+            <div class="child-con">container3</div>
+            <div class="child-con">container1</div>
+            <div class="child-con">container4</div>
+            <div class="child-con">container5</div>
+            <div class="child-con">container6</div>
+            <div class="child-con">container7</div>
+            <div class="child-con">container8</div>
+        </div>
+</body>
+</html>
